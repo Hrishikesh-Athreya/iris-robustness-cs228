@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+
+# Data (2GB+ biometrics — not committed)
+data/
+
+# Model checkpoints
+checkpoints/
+
+# Report (LaTeX source, PDF, figures)
+report/
+
+# Generated files (reproduced by scripts)
+manifest.csv
+metrics.json
+
+# Archives
+report.zip
