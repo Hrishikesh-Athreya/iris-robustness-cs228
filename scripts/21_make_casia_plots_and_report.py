@@ -179,7 +179,7 @@ def plot_seg_examples(n: int = 4) -> None:
         rr = df_test.iloc[idx]
         img = np.asarray(Image.open(rr["path"]).convert("L"))
         c = load_casia_interval_gt(rr["img_key"])
-        gt = rasterize_iris_mask(c, H, W, use_eyelids=True) if c is not None else np.zeros_like(img)
+        gt = rasterize_iris_mask(c, H, W, use_eyelids=False) if c is not None else np.zeros_like(img)
 
         pil = Image.fromarray(img).resize((size, size), Image.BILINEAR)
         x = torch.from_numpy(np.asarray(pil, dtype=np.float32) / 255.0).unsqueeze(0).unsqueeze(0).to(device)

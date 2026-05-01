@@ -85,7 +85,14 @@ class CASIASegDataset(Dataset):
             sx = self.size / float(self._w_native)
             sy = self.size / float(self._h_native)
             scaled = _scale_circles(circles, sx, sy)
-            mask = rasterize_iris_mask(scaled, self.size, self.size, use_eyelids=True)
+            # Train on the full iris annulus (no eyelid cut). The eyelid-cut
+            # mask was the original target, but its outer contour follows the
+            # eyelid arcs on top/bottom, which biased the downstream Kasa
+            # circle fit (median iris-radius error ~21 px = 20% of true r).
+            # Predicting the iris-disk annulus directly recovers the true
+            # iris-sclera boundary; eyelid occlusion is handled later as a
+            # row-mask in the matcher.
+            mask = rasterize_iris_mask(scaled, self.size, self.size, use_eyelids=False)
             y = (mask > 127).astype(np.float32)
         return x, y
 
