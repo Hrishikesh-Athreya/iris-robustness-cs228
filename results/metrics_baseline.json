@@ -1,0 +1,10 @@
+{
+  "val_eer": 0.363,
+  "val_threshold": 0.9461126817016676,
+  "test_far_at_val_threshold": 0.389125,
+  "test_frr_at_val_threshold": 0.322375,
+  "test_accuracy_at_val_threshold": 0.64425,
+  "test_eer": 0.35562499999999997,
+  "n_genuine_pairs": 8000,
+  "n_impostor_pairs": 8000
+}

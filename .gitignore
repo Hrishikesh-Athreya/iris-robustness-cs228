@@ -17,6 +17,14 @@ report/
 # Generated files (reproduced by scripts)
 manifest.csv
 metrics.json
+seg_manifest.csv
+strip_manifest.csv
+
+# Generated heavy artifacts (reproduced by scripts 07/08)
+data/seg_pred/
+data/strips/
+# Note: `results/` is intentionally tracked (per assignment rubric: saved model
+# checkpoints, training logs, metrics JSON). Heavy raw data is ignored above.
 
 # Archives
 report.zip

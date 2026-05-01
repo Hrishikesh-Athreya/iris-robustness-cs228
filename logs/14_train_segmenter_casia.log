@@ -1,0 +1,11 @@
+CASIA-Interval seg pairs: train=1841  val=412  test=383
+Device: mps (Apple GPU / Metal)
+FISNet-lite params: 8,236,097
+epoch   1/25  train_loss=0.3615  val_loss=0.2143  val_dice=0.9249  val_iou=0.8680  lr=9.96e-04
+epoch   2/25  train_loss=0.1535  val_loss=0.1664  val_dice=0.9348  val_iou=0.8853  lr=9.84e-04
+epoch   3/25  train_loss=0.1367  val_loss=0.1528  val_dice=0.9361  val_iou=0.8876  lr=9.65e-04
+epoch   4/25  train_loss=0.1271  val_loss=0.1375  val_dice=0.9414  val_iou=0.8968  lr=9.38e-04
+epoch   5/25  train_loss=0.1225  val_loss=0.1424  val_dice=0.9384  val_iou=0.8917  lr=9.05e-04
+epoch   6/25  train_loss=0.1189  val_loss=0.1788  val_dice=0.9251  val_iou=0.8681  lr=8.64e-04
+epoch   7/25  train_loss=0.1162  val_loss=0.1487  val_dice=0.9362  val_iou=0.8876  lr=8.19e-04
+epoch   8/25  train_loss=0.1174  val_loss=0.1473  val_dice=0.9358  val_iou=0.8868  lr=7.68e-04

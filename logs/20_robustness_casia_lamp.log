@@ -1,0 +1,79 @@
+Lamp test sample: 150 gen, 150 imp; 532 unique imgs
+Device: mps (Apple GPU / Metal)
+
+--- axis=blur intensity=0.0 ---
+  baseline_cnn    EER=0.0600
+  strip_cnn       EER=0.3800
+  iriscode        EER=0.3467
+
+--- axis=blur intensity=1.0 ---
+  baseline_cnn    EER=0.0800
+  strip_cnn       EER=0.3867
+  iriscode        EER=0.3267
+
+--- axis=blur intensity=2.0 ---
+  baseline_cnn    EER=0.1067
+  strip_cnn       EER=0.3567
+  iriscode        EER=0.3500
+
+--- axis=blur intensity=3.0 ---
+  baseline_cnn    EER=0.1200
+  strip_cnn       EER=0.3133
+  iriscode        EER=0.2733
+
+--- axis=blur intensity=4.0 ---
+  baseline_cnn    EER=0.1600
+  strip_cnn       EER=0.2767
+  iriscode        EER=0.2800
+
+--- axis=noise intensity=0.0 ---
+  baseline_cnn    EER=0.0600
+  strip_cnn       EER=0.3800
+  iriscode        EER=0.3467
+
+--- axis=noise intensity=5.0 ---
+  baseline_cnn    EER=0.0733
+  strip_cnn       EER=0.4000
+  iriscode        EER=0.3333
+
+--- axis=noise intensity=10.0 ---
+  baseline_cnn    EER=0.1000
+  strip_cnn       EER=0.3533
+  iriscode        EER=0.3633
+
+--- axis=noise intensity=20.0 ---
+  baseline_cnn    EER=0.1400
+  strip_cnn       EER=0.3533
+  iriscode        EER=0.3667
+
+--- axis=noise intensity=30.0 ---
+  baseline_cnn    EER=0.1433
+  strip_cnn       EER=0.3800
+  iriscode        EER=0.3200
+
+--- axis=illumination intensity=-0.4 ---
+  baseline_cnn    EER=0.1933
+  strip_cnn       EER=0.3733
+  iriscode        EER=0.3333
+
+--- axis=illumination intensity=-0.2 ---
+  baseline_cnn    EER=0.0967
+  strip_cnn       EER=0.3767
+  iriscode        EER=0.3400
+
+--- axis=illumination intensity=0.0 ---
+  baseline_cnn    EER=0.0600
+  strip_cnn       EER=0.3800
+  iriscode        EER=0.3467
+
+--- axis=illumination intensity=0.2 ---
+  baseline_cnn    EER=0.0800
+  strip_cnn       EER=0.3600
+  iriscode        EER=0.3600
+
+--- axis=illumination intensity=0.4 ---
+  baseline_cnn    EER=0.1000
+  strip_cnn       EER=0.3500
+  iriscode        EER=0.3500
+
+Wrote /Users/hrishi/Desktop/dev/Milestone1 BSAI/checkpoint_deliverable/results/robustness_casia_lamp.csv
